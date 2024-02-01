@@ -16,8 +16,8 @@ github_python_jira.py -- python-flaske Source Code.
 
 [
 Other applications:
-list_jira_projects.py -- will lists the Project names in the provided Jira account.
-create_jira_issues.py -- will create the new issue in Jira using python program, connects to Jira API. 
+.list_jira_projects.py -- will lists the Project names in the provided Jira account.
+.create_jira_issue.py -- will create the new issue in Jira using python program, connects to Jira API. 
 (Note: while creating issue, "The issue type id : will change from project to project"
     to get issue_id Dashboard--->issue types)
 ]
