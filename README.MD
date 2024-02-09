@@ -4,7 +4,7 @@ Project Description:
 For the actions(ex:issues/pull req, etc) on GitHub repository by the QE team or Dev team on a particular repository, which is refered by the developer who is associated with that particular task, if he feels it is a genuine action, then he wants to create a Jira Ticket/issue directly from the gitHub.
 
 In this project we achieved by the following steps:
-1. Webhooks activated on the particular action on the Repository the the developer.
+1. Webhooks activated on the particular action on the Repository by the developer.
 2. A python script which talks to Jira API and creates Jira issue in Jira Software account.
 3. By using Flaske module made the above python application into API.
 4. Whenever specified action happens on a Git repository webhooks sends POST request to the URL given in the webhooks settings, this POST request from webhooks triggers python-Flask API then this APT talks to Jira and creates issue in the corresponding Project.
