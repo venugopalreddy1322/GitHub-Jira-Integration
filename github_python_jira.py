@@ -5,7 +5,7 @@ from requests.auth import HTTPBasicAuth
 import json
 import os
 from flask import Flask
-
+# Creating a flask application instance
 app = Flask(__name__)
 # define a route that handles POST requests
 @app.route('/createjira', methods=['POST'])  # decorator, which runs before main()
@@ -15,8 +15,6 @@ def create_jira():
     # Passing api_token and mail_id as environment variables using export command in command-line
     api_token = os.getenv("api_token")
     mail_id = os.getenv("mail_id")
-    print(mail_id)
-
     auth = HTTPBasicAuth(mail_id, api_token)
 
     headers = {
@@ -51,7 +49,7 @@ def create_jira():
         "key": "DP"
         },
         
-        "summary": "create_issue_gitHub",
+        "summary": "create_issue_by_gitHub_action",
         
         
     },
